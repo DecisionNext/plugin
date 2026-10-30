@@ -1,12 +1,14 @@
 {
-  "name": "decisionnext",
-  "version": "0.1.0",
-  "description": "MCP configuration and skills library for data discovery, dashboard creation, decision support, and more.",
-  "author": {
     "name": "decisionnext",
-    "email": "support@decisionnext.com"
-  },
-  "homepage": "https://decisionnext.com",
-  "repository": "https://gitlab.decisionnext.com/dn/plugin",
-  "license": "MIT"
+    "displayName": "DecisionNext",
+    "icon": "./dn-logo.png",
+    "version": "0.1.0",
+    "description": "Connect to DecisionNext to buy or sell at the best times, with the best formulas, at the best prices.",
+    "author": {
+        "name": "decisionnext",
+        "email": "support@decisionnext.com"
+    },
+    "homepage": "https://decisionnext.com",
+    "repository": "https://gitlab.decisionnext.com/dn/plugin",
+    "defaultEnabled": true
 }

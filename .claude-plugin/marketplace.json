@@ -1,16 +1,16 @@
 {
-  "name": "decisionnext",
-  "description": "MCP and agent skills for working with the DecisionNext Platform.",
-  "owner": {
-    "name": "DecisionNext",
-    "url": "https://decisionnext.com"
-  },
-  "plugins": [
-    {
-      "name": "decisionnext",
-      "description": "MCP configuration and skills library for data discovery, dashboard creation, decision support, and more.",
-      "source": "./"
-    }
-  ]
+    "name": "decisionnext",
+    "displayName": "DecisionNext",
+    "description": "MCP and agent skills for working with the DecisionNext Platform.",
+    "owner": {
+        "name": "DecisionNext",
+        "url": "https://decisionnext.com"
+    },
+    "plugins": [
+        {
+            "name": "decisionnext",
+            "description": "MCP configuration and skills library for data discovery, dashboard creation, decision support, and more.",
+            "source": "./"
+        }
+    ]
 }
-
