@@ -1,15 +1,6 @@
 {
     "dntest": {
-        "command": "/opt/homebrew/bin/npx",
-        "args": [
-            "-y",
-            "mcp-remote",
-            "https://dntest.decisionnext.com:8001/mcp",
-            "--header",
-            "Authorization:${AUTH_HEADER}"
-        ],
-        "env": {
-            "AUTH_HEADER": "Bearer <TOKEN>"
-        }
+        "type": "http",
+        "url": "https://dntest.decisionnext.com:8001/mcp"
     }
 }
