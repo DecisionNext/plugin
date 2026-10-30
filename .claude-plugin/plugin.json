@@ -1,0 +1,12 @@
+{
+  "name": "decisionnext",
+  "version": "0.1.0",
+  "description": "MCP configuration and skills library for data discovery, dashboard creation, decision support, and more.",
+  "author": {
+    "name": "decisionnext",
+    "email": "support@decisionnext.com"
+  },
+  "homepage": "https://decisionnext.com",
+  "repository": "https://gitlab.decisionnext.com/dn/plugin",
+  "license": "MIT"
+}
