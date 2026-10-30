@@ -1,7 +1,6 @@
 {
     "name": "decisionnext",
     "displayName": "DecisionNext",
-    "icon": "./dn-logo.png",
     "version": "0.1.0",
     "description": "Connect to DecisionNext to buy or sell at the best times, with the best formulas, at the best prices.",
     "author": {
@@ -9,6 +8,5 @@
         "email": "support@decisionnext.com"
     },
     "homepage": "https://decisionnext.com",
-    "repository": "https://gitlab.decisionnext.com/dn/plugin",
-    "defaultEnabled": true
+    "repository": "https://gitlab.decisionnext.com/dn/plugin"
 }

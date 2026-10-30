@@ -1,6 +1,5 @@
 {
     "name": "decisionnext",
-    "displayName": "DecisionNext",
     "description": "MCP and agent skills for working with the DecisionNext Platform.",
     "owner": {
         "name": "DecisionNext",
