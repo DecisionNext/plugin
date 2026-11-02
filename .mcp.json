@@ -1,6 +1,6 @@
 {
     "dntest": {
         "type": "http",
-        "url": "https://dntest.decisionnext.com:8001/mcp"
+        "url": "https://mcp.dntest.decisionnext.com/mcp"
     }
 }
