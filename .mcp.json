@@ -1,5 +1,5 @@
 {
-    "dntest": {
+    "decisionnext-dntest": {
         "type": "http",
         "url": "https://mcp.dntest.decisionnext.com/mcp"
     }

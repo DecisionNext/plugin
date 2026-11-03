@@ -1,6 +1,6 @@
 {
     "name": "decisionnext",
-    "description": "MCP and agent skills for working with the DecisionNext Platform.",
+    "description": "DecisionNext for Claude",
     "owner": {
         "name": "DecisionNext",
         "url": "https://decisionnext.com"
@@ -8,7 +8,7 @@
     "plugins": [
         {
             "name": "decisionnext",
-            "description": "MCP configuration and skills library for data discovery, dashboard creation, decision support, and more.",
+            "description": "DecisionNext for Claude. Connect to DN for enhanced forecast analysis, dashboard creation, decision support, and more.",
             "source": "./"
         }
     ]

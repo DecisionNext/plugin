@@ -1,11 +1,12 @@
 {
     "name": "decisionnext",
     "displayName": "DecisionNext",
-    "version": "0.1.0",
-    "description": "Connect to DecisionNext to buy or sell at the best times, with the best formulas, at the best prices.",
+    "version": "0.2.0",
+    "description": "DecisionNext for Claude. Connect to DN for enhanced forecast analysis, dashboard creation, decision support, and more.",
     "author": {
-        "name": "decisionnext",
-        "email": "support@decisionnext.com"
+        "name": "DecisionNext",
+        "email": "support@decisionnext.com",
+        "url": "https://decisionnext.com"
     },
     "homepage": "https://decisionnext.com",
     "repository": "https://gitlab.decisionnext.com/dn/plugin"
