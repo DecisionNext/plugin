@@ -7,9 +7,9 @@
     },
     "plugins": [
         {
-            "name": "decisionnext",
+            "name": "decisionnext-dntest",
             "description": "DecisionNext for Claude. Connect to DN for enhanced forecast analysis, dashboard creation, decision support, and more.",
-            "source": "./"
+            "source": "./plugins/dntest/"
         }
     ]
 }

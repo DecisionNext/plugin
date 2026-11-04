@@ -1,23 +1,34 @@
-# DecisionNext Integration
+# DecisionNext AI Integration
 
-The DecisionNext Integration provides configuration for connecting to and
-interacting with the DecisionNext platform from AI workspaces like Claude and
-ChatGPT.
+This repository implements DN platform integrations for Claude, with plans for
+expanded support in the mid term.
 
-## Install Claude plugin
+## Claude Marketplace
 
-`/plugin install decisionnext --marketplace https://gitlab.decisionnext.com/dn/plugin.git`
+`.claude-plugin/marketplace.json` defines a custom Claude Plugin Marketplace,
+which is published internally.
 
-(The plugin is preinstalled for DecisionNext Team accounts)
+## Plugins
 
-## Connecting with Claude (OAuth sign-in)
+Plugins go in the `plugins/` directory, with the following layout.claude-plugin
+    │   │── plugin.json
+    │   └── icon.png
+    ├── .mcp.json
+    ├── commands
+    ├── LICENSE
+    ├── README.md
+    └── skills
 
-The MCP server supports interactive OAuth 2.0 sign-in: installing the plugin and
-adding the DecisionNext MCP server URL prompts Claude to **Sign in to DecisionNext**.
-The user signs in with their existing DecisionNext credentials — username/password
-plus MFA, or Google Workspace SSO — and grants consent once. No administrator-issued
-token and no manual client configuration are required.
+Claude plugins support 5 components: Commands, Skills, Agents, MCP/Connectors,
+and MCP Apps.
+A plugin containing only an MCP, or only skills, is a valid plugin.
 
-Instances are referred to by the names returned by the MCP server's `get_instances`
-tool (aliases for external users, customer IDs for internal DecisionNext users).
-Users with a single DecisionNext instance never need to choose.
+Adding a plugin to the marketplace makes it available for internal users to
+install. Alternatively, an admin can configure a plugin to automatically install
+to each Team account.
+
+*NOTE*: When adding a plugin, make sure you copy `icon.png` or another icon (.png
+required) into the plugin's `.claude-plugin/` directory.
+
+Add an entry for the plugin in `./.claude-plugin/marketplace.json`. See existing
+listings for schema.
