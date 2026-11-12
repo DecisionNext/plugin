@@ -10,6 +10,11 @@
             "name": "decisionnext-dntest",
             "description": "DecisionNext for Claude. Connect to DN for enhanced forecast analysis, dashboard creation, decision support, and more.",
             "source": "./plugins/dntest/"
+        },
+        {
+            "name": "decisionnext-dnqa",
+            "description": "DecisionNext for Claude. Connect to DN for enhanced forecast analysis, dashboard creation, decision support, and more.",
+            "source": "./plugins/dnqa/"
         }
     ]
 }

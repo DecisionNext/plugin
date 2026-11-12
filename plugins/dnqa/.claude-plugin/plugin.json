@@ -1,0 +1,13 @@
+{
+    "name": "decisionnext-dntest",
+    "displayName": "DecisionNext (DNTest)",
+    "version": "0.3.0",
+    "description": "DecisionNext for Claude. Connect to DN for enhanced forecast analysis, dashboard creation, decision support, and more.",
+    "author": {
+        "name": "DecisionNext",
+        "email": "support@decisionnext.com",
+        "url": "https://decisionnext.com"
+    },
+    "homepage": "https://decisionnext.com",
+    "repository": "https://gitlab.decisionnext.com/dn/plugin"
+}
