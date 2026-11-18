@@ -2,7 +2,12 @@
 
 The DecisionNext Integration provides configuration for connecting to and
 interacting with the DecisionNext platform from AI workspaces like Claude and
-ChatGPT.
+ChatGPT. The plugin includes two separate MCP servers:
+
+- **DecisionNext**: market data, forecasts, and decision support at
+  `https://mcp.dntest.decisionnext.com/mcp`.
+- **Protein ERP**: read-only SQL access to the simulated Summit Protein ERP at
+  `https://erp.dntest.decisionnext.com/mcp`.
 
 ## Install Claude plugin
 
@@ -25,3 +30,16 @@ Users with a single DecisionNext instance never need to choose.
 `get_instances` lists only the instances an administrator enabled for the user through
 **Manage MCP Access** in the Admin app. Sign-in alone grants no instance access: if the
 list is empty, ask a Pod Admin to enable MCP access for the instance.
+
+## Connecting to the simulated ERP
+
+The Protein ERP server requires a separate OAuth sign-in using the same DecisionNext
+credentials. Signing in to the DecisionNext server does not authorize the ERP server.
+
+ERP access requires membership in **Protein**, MCP access enabled for that instance,
+and the **`erp.query`** grant. Ask a Pod Admin to enable **Query the simulated ERP
+with SQL** under **Manage MCP Access** in the Admin app.
+
+The ERP server exposes `list_tables()`, `list_columns(table)`, and `execute_query(sql)`
+for querying simulated ERP data. It is read-only and separate from DecisionNext market
+data and forecasts.

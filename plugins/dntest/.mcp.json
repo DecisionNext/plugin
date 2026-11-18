@@ -2,5 +2,9 @@
     "decisionnext-dntest": {
         "type": "http",
         "url": "https://mcp.dntest.decisionnext.com/mcp"
+    },
+    "protein-erp-dntest": {
+        "type": "http",
+        "url": "https://erp.dntest.decisionnext.com/mcp"
     }
 }
