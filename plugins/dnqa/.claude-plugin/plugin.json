@@ -1,7 +1,7 @@
 {
     "name": "decisionnext-dnqa",
     "displayName": "DecisionNext (DNQA)",
-    "version": "0.4.0",
+    "version": "0.5.0",
     "description": "DecisionNext for Claude. Connect to DN for enhanced forecast analysis, dashboard creation, decision support, and more.",
     "author": {
         "name": "DecisionNext",
