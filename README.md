@@ -1,34 +1,94 @@
-# DecisionNext AI Integration
+# DecisionNext for Claude
 
-This repository implements DN platform integrations for Claude, with plans for
-expanded support in the mid term.
+The official [DecisionNext](https://decisionnext.com) plugin for Claude. It
+connects Claude to the DecisionNext platform so you can ask about market
+outlooks, forecasts, prices, spreads and drivers, build dashboards, and work
+through buy, sell and timing decisions, all grounded in your DecisionNext data.
 
-## Claude Marketplace
+It covers protein, livestock, dairy, crop and oil markets, and it's built for
+the buyers and sellers in those markets.
 
-`.claude-plugin/marketplace.json` defines a custom Claude Plugin Marketplace,
-which is published internally.
+## What's included
 
-## Plugins
+| Component | Name | What it does |
+| --- | --- | --- |
+| MCP connector | `decisionnext` | Gives Claude secure access to DecisionNext market data, forecasts, model accuracy, forecast drivers, documents and dashboards. |
+| Skill | `use-decisionnext` | Teaches Claude to answer like DecisionNext: buyer and seller-focused takeaways, correct units and sourcing, and protein, livestock, dairy and grain market knowledge. |
+| Skill | `dn-buy-sell-decision` | Turns a forecast into decision support for buy, sell, hold and timing questions: the price outlook, the cost of waiting, risks and options. It lays out the picture and leaves the decision to you. |
 
-Plugins go in the `plugins/` directory, with the following layout.claude-plugin
-    │   │── plugin.json
+## Requirements
+
+- A DecisionNext account.
+- MCP access enabled for your DecisionNext instance. An administrator turns
+  this on per user under **Manage MCP Access** in the DecisionNext Admin app.
+- Claude (claude.ai, Claude Desktop or Claude Code).
+
+## Installation
+
+### Claude Code
+
+```text
+/plugin marketplace add DecisionNext/plugin
+/plugin install decisionnext@decisionnext
+```
+
+### Claude Team and Enterprise
+
+An organization admin can add this repository
+(`https://github.com/DecisionNext/plugin`) as a plugin marketplace in the
+organization's Claude settings, then make the `decisionnext` plugin available to
+members or install it automatically for everyone.
+
+## Signing in
+
+The first time Claude uses DecisionNext, it asks you to **Sign in to
+DecisionNext**. Use your existing DecisionNext credentials (username and
+password with MFA, or Google Workspace SSO) and grant consent once. You don't
+need an API token or any manual configuration.
+
+Signing in doesn't grant access to any data by itself. Claude can only see the
+DecisionNext instances an administrator has enabled for you. If Claude reports
+that no instances are available, ask your DecisionNext administrator to enable
+MCP access for your instance.
+
+If you have access to more than one instance, Claude asks which one to use
+unless you name it. If you have only one, Claude uses it automatically.
+
+## Example prompts
+
+- "What's the outlook for choice ribeye over the next eight weeks?"
+- "How accurate has the forecast for 50% lean trim been at four weeks out?"
+- "What's driving the pork belly forecast?"
+- "I need to buy 20 loads of briskets over the next six weeks. Help me plan
+  the timing."
+- "Build me a dashboard comparing boneless skinless breast and wing prices."
+
+## Repository layout
+
+```text
+.
+├── .claude-plugin/
+│   └── marketplace.json      # Marketplace catalog listing the plugin
+└── plugin/
+    ├── .claude-plugin/
+    │   ├── plugin.json       # Plugin manifest (name, version, author)
     │   └── icon.png
-    ├── .mcp.json
-    ├── commands
-    ├── LICENSE
-    ├── README.md
-    └── skills
+    ├── .mcp.json             # DecisionNext MCP server connection
+    ├── skills/
+    │   ├── use-decisionnext/
+    │   │   └── SKILL.md
+    │   └── dn-buy-sell-decision/
+    │       └── SKILL.md
+    └── LICENSE
+```
 
-Claude plugins support 5 components: Commands, Skills, Agents, MCP/Connectors,
-and MCP Apps.
-A plugin containing only an MCP, or only skills, is a valid plugin.
+## Support
 
-Adding a plugin to the marketplace makes it available for internal users to
-install. Alternatively, an admin can configure a plugin to automatically install
-to each Team account.
+For help with the plugin, your DecisionNext access or your forecasts, contact
+your DecisionNext customer success specialist or email
+[support@decisionnext.com](mailto:support@decisionnext.com).
 
-*NOTE*: When adding a plugin, make sure you copy `icon.png` or another icon (.png
-required) into the plugin's `.claude-plugin/` directory.
+## License
 
-Add an entry for the plugin in `./.claude-plugin/marketplace.json`. See existing
-listings for schema.
+Copyright © 2026 DecisionNext, Inc. All rights reserved. See
+[`plugin/LICENSE`](plugin/LICENSE).
