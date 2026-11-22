@@ -1,6 +1,6 @@
 {
     "decisionnext": {
         "type": "http",
-        "url": "https://mcp.decisionnext.com/mcp"
+        "url": "https://mcp.apps.decisionnext.com/mcp"
     }
 }
