@@ -28,14 +28,14 @@ the buyers and sellers in those markets.
 ### Claude Code
 
 ```text
-/plugin marketplace add DecisionNext/plugin
+/plugin marketplace add DecisionNext/DecisionNext
 /plugin install decisionnext@decisionnext
 ```
 
 ### Claude Team and Enterprise
 
 An organization admin can add this repository
-(`https://github.com/DecisionNext/plugin`) as a plugin marketplace in the
+(`https://github.com/DecisionNext/DecisionNext`) as a plugin marketplace in the
 organization's Claude settings, then make the `decisionnext` plugin available to
 members or install it automatically for everyone.
 

@@ -20,7 +20,7 @@ decisions, all grounded in your DecisionNext data.
 In Claude Code:
 
 ```text
-/plugin marketplace add DecisionNext/plugin
+/plugin marketplace add DecisionNext/DecisionNext
 /plugin install decisionnext@decisionnext
 ```
 
