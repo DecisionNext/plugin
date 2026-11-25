@@ -1,7 +1,7 @@
 {
     "name": "decisionnext",
     "displayName": "DecisionNext",
-    "version": "0.6.1",
+    "version": "0.6.3",
     "description": "DecisionNext for Claude. Connect to DN for enhanced forecast analysis, dashboard creation, decision support, and more.",
     "author": {
         "name": "DecisionNext",
